@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="clac.py" />
+    <Compile Include="calc.py" />
     <Compile Include="reader.py" />
     <Compile Include="main.py" />
   </ItemGroup>
