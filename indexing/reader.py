@@ -12,7 +12,6 @@ def mod02(입력):
             # 줄 단위로 읽어오기
             줄 = 파일.readlines()
             print("파일을 성공적으로 읽어왔습니다!")
-
     except Exception:
         print("EH-01: 파일 및 입력 오류 : 경로 및 파일 재확인")
         return None # 오류 발생 시 None을 반환하여 main에 알림
