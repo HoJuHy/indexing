@@ -1,19 +1,18 @@
 # ==============================================================================
 # mod02: 경로 불러오기
 # ==============================================================================
-import calc
+import calc # calc.py 모듈을 불러옴
 
 def mod02(입력):
-    print(f"입력한 경로 : {입력}")
+    print(f"입력한 경로 : {입력}") #입력 경로 재확인
     경로 = rf"{입력}"  # r로 읽어로면서 f로 입력형태로 경로 처리
-
     try:
-        with open(경로, 'r', encoding='utf-8') as 파일: # 인코딩을 'utf-8'로 지정하여 텍스트 파일을 읽습니다.
+        with open(경로, 'r', encoding='utf-8') as 파일: # 인코딩을 'utf-8'로 지정하여 텍스트 파일을 읽음.
             # 줄 단위로 읽어오기
-            줄 = 파일.readlines()
-            print("파일을 성공적으로 읽어왔습니다!")
+            줄 = 파일.readlines() #readline은 한줄, readlines는 여러줄을 읽어옴
+            print("파일을 성공적으로 읽어왔습니다!") #성공 메세지 후 return으로
     except Exception:
-        print("EH-01: 파일 및 입력 오류 : 경로 및 파일 재확인")
+        print("EH-01: 파일 및 입력 오류 : 경로 및 파일 재확인") #경로가 없을때 오류메시지 EH-01 출력
         return None # 오류 발생 시 None을 반환하여 main에 알림
 
-    return calc.mod03(줄)
+    return calc.mod03(줄) #mod03으로 ㄱㄱ
